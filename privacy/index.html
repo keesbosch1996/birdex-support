@@ -26,17 +26,20 @@
     </header>
 
     <article class="content-card">
-      <p class="meta">Last updated: 15 November 2026</p>
+      <p class="meta">Last updated: 16 November 2026</p>
       <p>Koekoek is provided by <strong>KB Innovations B.V.</strong>. Privacy contact: <a href="mailto:kb.innovationsbv@gmail.com">kb.innovationsbv@gmail.com</a>.</p>
 
       <h2>Local-first data</h2>
-      <p>Using Koekoek for listening, the field guide and your local journal does not require an account. Bird-sound recordings, observation photos, optional capture locations, notes and saved observations are stored locally on your device. Koekoek does not upload these records or media. Optional sharing of bird sightings, friend profiles and usage statistics each have a separate choice.</p>
+      <p>Using Koekoek for listening, the field guide and your local journal does not require an account. In the updated journal, microphone clips are temporary during recognition and review. Older saved clips remain on the device. Observation photos, optional capture locations, notes and saved observations are stored locally on your device. Koekoek does not upload these records or media. Optional sharing of bird sightings, friend profiles and usage statistics each have a separate choice.</p>
 
       <h2>Permissions</h2>
       <p>Professor Koekoek explains microphone and foreground location access at first launch. Koekoek asks for microphone access to recognise bird sounds. You can leave location off. Recording begins when you start listening. Optional foreground location access can attach your phone’s location, fix time and accuracy to that recording. Camera or photo-library access is used only when you choose to add a photo. Denying location or photo access does not prevent you from browsing the field guide or listening without a saved location.</p>
 
       <h2>Optional birding reminders</h2>
-      <p>Turn on notifications in Profile → Settings enables morning encouragement and weekly streak reminders together. Koekoek requests notification permission only when you choose to enable or test them. The phone schedules these reminders locally; no push token, reminder preferences or private journal records are sent to a notification service. You can change the reminder times or switch all notifications off together; the short bird whistle is included. Phone sound, Focus and battery settings can affect delivery. Morning encouragement continues even after the weekly goal is complete.</p>
+      <p>Turn on notifications in Profile → Settings enables morning encouragement and weekly streak reminders together. Koekoek requests notification permission only when you choose to enable or test them. The phone schedules these reminders locally; no push token, reminder preferences or private journal records are sent to a notification service. You can change the reminder times or turn off local reminders. New versions include a two-note cuckoo call. Phone sound, Focus and battery settings can affect delivery. Morning encouragement continues even after the weekly goal is complete.</p>
+
+      <h2>Optional flock notifications</h2>
+      <p>In versions with flock notifications, a separate switch in Your flock lets Professor Koekoek announce friend invitations and acceptances. Koekoek verifies the friendship with Firebase. Its Cloudflare Worker receives the account identifiers involved and processes the Firebase sign-in token to verify the request. If you enable delivery on a device, the Worker stores its Expo push token and selected language for your account. Expo and Apple or Google deliver the notification. The message contains no journal entries, friend names, recordings or location. You can switch flock notifications off for this device. Deleting your account removes its registered devices and delivery records.</p>
 
       <h2>Network connections</h2>
       <p>Bird recognition runs on-device. Apple Maps may load a basemap over the network, and optional bird-call playback loads source-checked audio from Wikimedia Commons, iNaturalist, the National Park Service, Tierstimmenarchiv or Japan’s National Museum of Nature and Science after you tap play. These audio hosts receive the requested file URL and normal connection information, such as your IP address; Koekoek does not send your microphone recordings or observation coordinates with the request. Opening a source or credit link uses your browser. These providers process requests under their own privacy policies. Local records and the observation list remain available when map tiles or optional audio cannot load.</p>
