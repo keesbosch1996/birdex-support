@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="144" viewBox="0 0 554 144" fill="none">
+  <title>Koekoek</title>
+  <g stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="18">
+      <path d="M14 25V96M14 78L58 49M32 66L60 96"/>
+      <path d="M254 25V96M254 78L298 49M272 66L300 96"/>
+      <path d="M494 25V96M494 78L538 49M512 66L540 96"/>
+    </g>
+    <g stroke-width="16">
+      <circle cx="112" cy="76" r="26"/>
+      <circle cx="352" cy="76" r="26"/>
+      <path d="M215 94C206 103 191 104 180 97C168 90 165 75 170 63C176 48 193 43 207 51C218 57 222 68 220 76H169"/>
+      <path d="M455 94C446 103 431 104 420 97C408 90 405 75 410 63C416 48 433 43 447 51C458 57 462 68 460 76H409"/>
+    </g>
+    <path d="M82 28L112 7L142 28" stroke-width="10"/>
+    <path d="M103 71L112 76L120 66M112 109V130" stroke-width="5"/>
+  </g>
+  <circle cx="112" cy="132" r="6" fill="#000000"/>
+</svg>
