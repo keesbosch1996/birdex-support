@@ -3,62 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official support and privacy information for Koekoek, a local-first bird discovery app.">
-  <meta name="theme-color" content="#FDEEE2">
-  <title>Koekoek · Support and privacy</title>
+  <meta name="description" content="Meet the birds around you with Koekoek. Recognise birdsong, build your collection and keep your favourite sightings close.">
+  <meta name="theme-color" content="#FCF0E5">
+  <title>Koekoek · Discover the birds around you</title>
   <link rel="icon" href="assets/app-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="nl" href="nl/">
+  <script src="locale.js" defer></script>
 </head>
-<body>
+<body class="home-site">
   <header class="site-header site-shell">
-    <a class="wordmark" href="./">Koekoek</a>
+    <a class="wordmark" href="./?lang=en">Koekoek</a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="support/">Support</a>
-      <a href="privacy/">Privacy</a>
-    </nav>
+      <a href="support/?lang=en">Support</a>
+      <a href="privacy/?lang=en">Privacy</a>
+    <a href="nl/" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">NL</a></nav>
   </header>
 
   <main class="site-shell">
-    <section class="home-hero">
-      <p class="eyebrow">Official Koekoek help centre</p>
-      <h1>Pause. Listen.<br>Discover.</h1>
-      <p class="hero-intro">Help for your personal bird field guide, with clear answers about listening, observations and privacy.</p>
-
-      <a class="bird-medallion" href="support/" aria-label="Open Koekoek support">
-        <img src="assets/app-icon.png" width="512" height="512" alt="">
-      </a>
-
-      <div class="quick-links" aria-label="Help centre sections">
-        <a class="quick-card" href="support/">
-          <div>
-            <p class="eyebrow">Questions and troubleshooting</p>
-            <h2>Support</h2>
-            <p>Find recording tips, map information and help with your collection.</p>
-          </div>
-          <span class="arrow">Open support →</span>
-        </a>
-        <a class="quick-card" href="privacy/">
-          <div>
-            <p class="eyebrow">Your field notes stay yours</p>
-            <h2>Privacy</h2>
-            <p>See what stays on your phone and when Koekoek connects to other services.</p>
-          </div>
-          <span class="arrow">Read the policy →</span>
-        </a>
+    <section class="home-hero" aria-labelledby="welcome-title">
+      <div class="home-welcome">
+        <h1 id="welcome-title">Coffee finished?<br>Shoes on.</h1>
+        <p class="hero-intro">I’m Professor Koekoek. I help you recognise birds by their song. Shall we see who’s outside?</p>
+        <div class="actions"><a class="button" href="#listen">Meet Koekoek <span aria-hidden="true">↓</span></a></div>
       </div>
+      <img class="home-illustration" src="assets/koekoek-garden-hero.webp" width="1536" height="1024" alt="The Koekoek bird and a robin together on a leafy branch." fetchpriority="high">
+    </section>
 
-      <div class="privacy-note" aria-label="Koekoek privacy summary">
-        <div><strong>No account</strong><span>Start exploring without creating a profile.</span></div>
-        <div><strong>On-device recognition</strong><span>Bird sounds are analysed on your phone.</span></div>
-        <div><strong>Local field journal</strong><span>Your observations remain in local app storage.</span></div>
+    <section class="feature feature-listen" id="listen" aria-labelledby="listen-title">
+      <div class="feature-visual">
+        <div class="phone phone-left"><img src="assets/screens/listen.jpg" width="600" height="1304" alt="Koekoek’s Listen screen with its Start listening button." loading="lazy"></div>
       </div>
+      <div class="feature-copy">
+        <p class="feature-label">Birdsong recognition</p>
+        <h2 id="listen-title">That one in the hedge.</h2>
+        <p>You’ve heard it all morning. Now put a name to it. Tap Listen, check the suggested birds and save your sighting.</p>
+      </div>
+    </section>
+
+    <section class="feature feature-collection" aria-labelledby="collection-title">
+      <div class="feature-copy">
+        <p class="feature-label">Your collection</p>
+        <h2 id="collection-title">Oh, it’s you again.</h2>
+        <p>Save your sightings and watch your collection grow. Discovered birds get their own illustration. Silhouettes show the species you have yet to find.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="phone phone-right"><img src="assets/screens/collection.jpg" width="600" height="1304" alt="A personal Koekoek collection showing illustrated Barn Swallow and Common Blackbird entries." loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="feature feature-species" aria-labelledby="species-title">
+      <div class="feature-visual">
+        <div class="phone phone-left"><img src="assets/screens/species.jpg" width="600" height="1304" alt="The Common Blackbird detail page with its call, habitat and diet." loading="lazy"></div>
+      </div>
+      <div class="feature-copy">
+        <p class="feature-label">Bird details</p>
+        <h2 id="species-title">Get to know the bird.</h2>
+        <p>Read about its habitat and diet, listen to its call and see where it lives. Each species has its own illustrated page in your field guide.</p>
+      </div>
+    </section>
+
+    <section class="feature feature-map" aria-labelledby="map-title">
+      <div class="feature-copy">
+        <p class="feature-label">Your map &amp; logbook</p>
+        <h2 id="map-title">Where was that blackbird?</h2>
+        <p>See your own sightings and birds spotted nearby on the map. Keep photos and notes in your logbook.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="phone phone-right"><img src="assets/screens/map.jpg" width="600" height="1304" alt="Koekoek’s personal map with three saved bird sightings and an observation preview." loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="feature feature-house" aria-labelledby="house-title">
+      <div class="feature-copy">
+        <p class="feature-label">Birdhouses</p>
+        <h2 id="house-title">Room for your flock.</h2>
+        <p>Start a birdhouse with up to five friends. Work on weekly challenges and decorate the place together. There’s a weekly competition, too, if your flock fancies it.</p>
+      </div>
+      <img class="house-art" src="assets/birdhouse.svg" width="400" height="235" alt="A wooden Koekoek birdhouse with a purple roof and a window box of flowers." loading="lazy">
+    </section>
+    <section class="home-closing">
+      <h2>Need a hand?</h2>
+      <p>Find practical answers on the support page. If your question isn’t there, drop us an email.</p>
+      <a href="support/?lang=en">Visit support <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="site-shell footer-row">
       <div>© 2026 KB Innovations B.V. · Koekoek</div>
-      <div class="footer-links"><a href="support/">Support</a><a href="privacy/">Privacy</a></div>
+      <div class="footer-links"><a href="support/?lang=en">Support</a><a href="privacy/?lang=en">Privacy</a></div>
     </div>
   </footer>
 </body>

@@ -4,24 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Help and frequently asked questions for Koekoek.">
-  <meta name="theme-color" content="#FDEEE2">
+  <meta name="theme-color" content="#FCF0E5">
   <title>Support · Koekoek</title>
   <link rel="icon" href="../assets/app-icon.png">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="nl" href="../nl/support/">
+  <script src="../locale.js" defer></script>
 </head>
 <body>
   <header class="site-header site-shell">
-    <a class="wordmark" href="../">Koekoek</a>
+    <a class="wordmark" href="../?lang=en">Koekoek</a>
     <nav class="site-nav" aria-label="Main navigation">
-      <a href="./" aria-current="page">Support</a>
-      <a href="../privacy/">Privacy</a>
-    </nav>
+      <a href="./?lang=en" aria-current="page">Support</a>
+      <a href="../privacy/?lang=en">Privacy</a>
+    <a href="../nl/support/" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">NL</a></nav>
   </header>
 
   <main class="site-shell">
     <header class="page-hero">
       <p class="eyebrow">Koekoek support</p>
-      <h1>Let’s get you back outside.</h1>
+      <h1>Let’s sort it out.</h1>
       <p class="lead">For help with Koekoek, email kb.innovationsbv@gmail.com. Include your Koekoek version, iOS version, device model and the steps that led to the problem.</p>
       <div class="actions"><a class="button" href="mailto:kb.innovationsbv@gmail.com" aria-label="Contact support — kb.innovationsbv@gmail.com">kb.innovationsbv@gmail.com</a></div>
     </header>
@@ -29,6 +32,26 @@
     <section class="content-card" aria-labelledby="faq-title">
       <h2 id="faq-title">Frequently asked questions</h2>
       <div class="faq">
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>You can listen, browse birds and keep your own journal without an account. Create a profile when you want to add friends or join a birdhouse. Microphone access is part of the initial setup; location and sharing are optional.</p>
+        </details>
+        <details>
+          <summary>I forgot my password. What now?</summary>
+          <p>On the sign-in screen, choose Forgot password?, enter your email address and check your inbox. Check spam too. If you use Google or Apple to sign in, choose the same sign-in button instead.</p>
+        </details>
+        <details>
+          <summary>My verification email hasn’t arrived.</summary>
+          <p>Check the email address shown in the app and your spam folder. You can send the verification email again from that screen. After opening its link, return to Koekoek and choose I’ve verified my email.</p>
+        </details>
+        <details>
+          <summary>How do I accept a friend invitation?</summary>
+          <p>Open the invitation link and choose Open Koekoek. Sign in or create a profile, then accept the invitation. If the app doesn’t open, copy the code from the page and paste it into Your flock → Add friends. Each invitation is for one friend and lasts seven days. Ask for a new one if it has expired or already been used.</p>
+        </details>
+        <details>
+          <summary>What is a birdhouse?</summary>
+          <p>A birdhouse is a group for you and up to five others. Work on weekly challenges, earn decorations and furnish your house together. The weekly competition is optional and needs agreement from every eligible member.</p>
+        </details>
         <details>
           <summary>How can I improve a recording?</summary>
           <p>Move away from traffic and conversation, keep the phone clear of wind and avoid covering the microphone. A nearby, clear call works better than distant or overlapping sounds.</p>
@@ -39,15 +62,11 @@
         </details>
         <details>
           <summary>Does Koekoek upload my recordings?</summary>
-          <p>No. Recognition runs on your device. New journal entries keep the observation details and discard the microphone clip after review. Tapping the sound in an observation plays an available species reference call. Older clips remain on your device.</p>
+          <p>No. Recognition runs on your device. New journal entries keep the observation details and discard the microphone clip after review. Tapping the sound in an observation plays an available species reference call. The app also removes microphone clips saved by older versions while keeping their observation records.</p>
         </details>
         <details>
           <summary>Why does Koekoek request my location?</summary>
           <p>Foreground location is optional and can be attached to a recording so your saved observation appears on your personal map. Denying it does not block listening or the field guide.</p>
-        </details>
-        <details>
-          <summary lang="nl">Hoe krijg ik toegang tot de buurtkaart?</summary>
-          <p lang="nl">Kies Buurtkaart en zet ‘Deel mijn waarnemingen’ aan. In de versie met het driedaagse overzicht zie je vogels van vandaag, gisteren en eergisteren. Grotere spelden zijn recenter. Je eigen bijdragen herken je aan de koraalkleurige rand en ‘Mijn waarneming’ in de details. In versies met tijdstippen zie je ook de lokale opnametijd in het kaartkaartje en de lijst. Je deelt de soort, opnamedag, opnametijd tot op de minuut en onzekerheid. Oudere spelden zonder tijd tonen “Tijd onbekend”. Elke publieke speld staat maximaal 250 meter van de opgeslagen opnameplek. Via het tandwiel zet je delen weer uit. Voor het delen van tijdstippen geef je opnieuw toestemming als je eerder alleen de dag, maand of een grof gebied deelde.</p>
         </details>
         <details>
           <summary>How do I unlock the nearby map?</summary>
@@ -72,7 +91,7 @@
   <footer class="site-footer">
     <div class="site-shell footer-row">
       <div>© 2026 KB Innovations B.V. · Koekoek</div>
-      <div class="footer-links"><a href="../">Home</a><a href="../privacy/">Privacy policy</a></div>
+      <div class="footer-links"><a href="../?lang=en">Home</a><a href="../privacy/?lang=en">Privacy policy</a></div>
     </div>
   </footer>
 </body>

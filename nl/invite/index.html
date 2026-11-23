@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#FCF0E5">
+  <title>Je bent uitgenodigd · Koekoek</title>
+  <link rel="icon" href="../../assets/app-icon.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../invite/invite.js" defer></script>
+  <link rel="alternate" hreflang="en" href="../../invite/">
+  <link rel="alternate" hreflang="nl" href="./">
+  <script src="../../locale.js" defer></script>
+</head>
+<body class="invitation-site">
+  <header class="site-header site-shell">
+    <a class="wordmark" href="../">Koekoek</a>
+    <nav class="site-nav" aria-label="Hoofdnavigatie"><a href="../support/">Hulp</a><a href="../privacy/">Privacy</a><a href="../../invite/?lang=en" hreflang="en" lang="en" aria-label="English" title="English">EN</a></nav>
+  </header>
+  <main class="site-shell invite-page">
+    <section class="page-hero">
+      <div class="invite-art"><img class="invite-bird" src="../../assets/professor-flock.png" width="640" height="328" alt=""></div>
+      <p class="eyebrow">Iemand wil je erbij</p>
+      <h1>Vlieg je mee?</h1>
+      <p class="hero-intro">Je hebt een uitnodiging voor de zwerm van een vriend in Koekoek.</p>
+      <div id="invitation" hidden>
+        <p><a id="open-app" class="button">Open Koekoek</a></p>
+        <p>Log in of maak een profiel en accepteer de uitnodiging in de app.</p>
+        <details class="invite-help">
+          <summary>Opent de app niet?</summary>
+          <p>Open Koekoek en ga naar Jouw zwerm → Vrienden toevoegen → Uitnodigingscode invoeren. Plak daar deze code.</p>
+          <p><code id="invite-code"></code></p>
+          <button id="copy-code" class="button" type="button">Kopieer uitnodigingscode</button>
+          <p id="copy-status" role="status"></p>
+          <p>Heb je Koekoek nog niet? Vraag je vriend om de huidige installatielink. Bewaar deze uitnodiging en open hem opnieuw na het installeren.</p>
+        </details>
+        <p class="invite-note">Voor één vriend, zeven dagen geldig.</p>
+      </div>
+      <p id="invalid-invite" role="status">Deze link is niet compleet of ongeldig. Vraag je vriend een nieuwe uitnodiging te delen.</p>
+      <noscript><p>Zet JavaScript aan om de uitnodiging te openen, of plak de uitnodigingslink bij Jouw zwerm → Vrienden toevoegen in Koekoek.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="site-shell footer-row"><div>© 2026 KB Innovations B.V. · Koekoek</div><a href="../support/">Hulp nodig?</a></div></footer>
+</body>
+</html>

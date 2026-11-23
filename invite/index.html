@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#FCF0E5">
+  <title>You’re invited · Koekoek</title>
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="invite.js" defer></script>
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="nl" href="../nl/invite/">
+  <script src="../locale.js" defer></script>
+</head>
+<body class="invitation-site">
+  <header class="site-header site-shell">
+    <a class="wordmark" href="../?lang=en">Koekoek</a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="../support/?lang=en">Support</a><a href="../privacy/?lang=en">Privacy</a><a href="../nl/invite/" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">NL</a></nav>
+  </header>
+  <main class="site-shell invite-page">
+    <section class="page-hero">
+      <div class="invite-art"><img class="invite-bird" src="../assets/professor-flock.png" width="640" height="328" alt=""></div>
+      <p class="eyebrow">A friend sent you this</p>
+      <h1>Join the flock?</h1>
+      <p class="hero-intro">You’ve been invited to join a friend’s flock on Koekoek.</p>
+      <div id="invitation" hidden>
+        <p><a id="open-app" class="button">Open Koekoek</a></p>
+        <p>Sign in or create a profile, then accept the invitation in the app.</p>
+        <details class="invite-help">
+          <summary>App not opening?</summary>
+          <p>Open Koekoek, go to Your flock → Add friends → Enter invite code, and paste this code.</p>
+          <p><code id="invite-code"></code></p>
+          <button id="copy-code" class="button" type="button">Copy invite code</button>
+          <p id="copy-status" role="status"></p>
+          <p>Don’t have Koekoek yet? Ask your friend for the current installation link. Keep this invitation and open it again after installing.</p>
+        </details>
+        <p class="invite-note">For one friend, valid for seven days.</p>
+      </div>
+      <p id="invalid-invite" role="status">This link is incomplete or invalid. Ask your friend to share a new invitation.</p>
+      <noscript><p>Enable JavaScript to open the invitation, or paste the invitation link into Your flock → Add friends in Koekoek.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="site-shell footer-row"><div>© 2026 KB Innovations B.V. · Koekoek</div><a href="../support/?lang=en">Get help</a></div></footer>
+</body>
+</html>
