@@ -144,10 +144,8 @@ main { padding-bottom: 84px; }
 .home-hero h1 { font-size: clamp(2.8rem, 5.2vw, 4.5rem); line-height: 1.08; }
 .home-hero .hero-intro { max-width: 430px; font-size: 1.125rem; margin: 24px 0 0; }
 .home-hero .actions { justify-content: flex-start; align-items: center; }
-.home-hero .button { gap: 18px; border: 0; box-shadow: none; }
 .app-store-badge { display: inline-flex; flex-shrink: 0; padding: 12px; border-radius: 12px; }
 .app-store-badge img { display: block; height: 48px; width: auto; }
-.home-tour { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; font-weight: 700; }
 .trademark-note { margin-top: 24px; font-size: .75rem; }
 .home-illustration { display: block; width: 100%; height: auto; }
 .home-site main { padding-bottom: 0; }
