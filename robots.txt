@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://koekoekapp.com/sitemap.xml

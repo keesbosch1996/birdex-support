@@ -2,7 +2,7 @@
 (() => {
   const englishChoice = new URLSearchParams(window.location.search).get('lang') === 'en';
   const preferred = (navigator.languages?.[0] || navigator.language || 'en').toLowerCase();
-  const dutch = document.querySelector('link[rel="alternate"][hreflang="nl"]');
+  const dutch = document.querySelector('a[hreflang="nl"]');
   if (document.documentElement.lang === 'en' && !englishChoice && /^nl(?:-|$)/.test(preferred) && dutch) {
     const destination = new URL(dutch.getAttribute('href'), window.location.href);
     destination.hash = window.location.hash;
